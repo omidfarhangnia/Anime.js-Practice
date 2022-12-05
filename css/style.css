@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+:root{
+    --bs-font: "Nerko One"
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, p{
+    margin: 0;
+}
+.animation__container{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.animation__container > div{
+    width: 0%;
+    height: 12.5vh;
+}
+
+.color__band1{
+    background: #ffccd2;
+}
+.color__band2{
+    background: #ff99a5;
+}
+.color__band3{
+    background: #ff6677;
+}
+.color__band4{
+    background: #ff334a;
+}
+.color__band5{
+    background: #ff001d;
+}
+.color__band6{
+    background: #cc0017;
+}
+.color__band7{
+    background: #990011;
+}
+.color__band8{
+    background: #66000c;
+}
+
+.go__button{
+    position: fixed;
+    bottom: 10vh;
+    right: 10%;
+    font-size: 15px;
+    background: #eed400;
+    border: 1px solid #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-family: fantasy;
+    letter-spacing: 1.5px;
+    display: none;
+}
+.active__button{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/ripped-paper.png), linear-gradient(to top, #66000c, #ff99a5);
+    background-repeat: no-repeat;
+    background-size: 100% 70vh, auto;
+    display: flex;
+    justify-content: center;
+}
+.container__elements{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    translate: 0 30px;
+}
+.container__main__header{
+    font-size: 3rem;
+    margin: .4rem 0;
+    font-family: var(--bs-font);
+}
+.container__extra__header{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+    font-family: var(--bs-font);
+}
+.container__prag{
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+    max-width: 500px;
+    text-align: justify;
+    font-family: var(--bs-font);
+}
+.container__buttons{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.container__buttons > button{
+    border: 0;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: var(--bs-font);
+}
+.button__num__1{
+    background: #ff001d;
+}
+.button__num__2{
+    background: #ff99a5;
+}
+.hidden__element{
+    opacity: 0;
+}
+
+@media (min-width: 500px) {
+    html{
+        font-size: 23px;
+    }
+    .go__button{
+        width: 90px;
+        height: 90px;
+        font-size: 20px;
+    }
+}
